@@ -28,10 +28,10 @@ keymap.set("n", "<Leader>nh", ":nohlsearch<CR>", opts)
 -- Tab Management
 -----------------------------------------------------------
 
-keymap.set("n", "te", ":tabnew<CR>", opts)   -- Open new tab
+keymap.set("n", "te", ":tabnew<CR>", opts) -- Open new tab
 keymap.set("n", "tc", ":tabclose<CR>", opts) -- Close current tab
-keymap.set("n", "tn", ":tabnext<CR>", opts)  -- Go to next tab
-keymap.set("n", "tp", ":tabprev<CR>", opts)  -- Go to previous tab
+keymap.set("n", "tn", ":tabnext<CR>", opts) -- Go to next tab
+keymap.set("n", "tp", ":tabprev<CR>", opts) -- Go to previous tab
 
 -----------------------------------------------------------
 -- Window Management
