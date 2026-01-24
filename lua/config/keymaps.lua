@@ -44,6 +44,8 @@ keymap.set("n", "<Plug>(customPrefix)v", "<C-W>v", opts) -- Split vertically
 -- Window control
 keymap.set("n", "<Plug>(customPrefix)e", "<C-W>=", opts) -- Make windows equal size
 keymap.set("n", "<Plug>(customPrefix)c", "<C-W>c", opts) -- Close current window
+keymap.set("n", "<C-w>e", "<C-W>=", opts) -- Make windows equal size
+keymap.set("n", "<C-w>c", "<C-W>c", opts) -- Close current window
 
 -- Use Ctrl + hjkl to move between windows
 keymap.set("n", "<C-h>", "<C-w>h", opts) -- Move to the left window
