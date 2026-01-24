@@ -2,7 +2,6 @@ return {
   {
     "mason-org/mason.nvim",
     build = ":MasonUpdate",
-    keys = { { "<Leader>cm", "<cmd>Mason<CR>", desc = "Mason" } },
     opts = {
       ui = {
         icons = {

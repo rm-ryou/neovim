@@ -2,7 +2,7 @@ return {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
-    event = "InsertEnter",
+    -- event = "InsertEnter",
     opts = {
       suggestions = { enable = false },
       panels = { enable = false },
@@ -24,6 +24,7 @@ return {
     },
     build = "make tiktoken",
     opts = {
+      model = "gpt-5.2-codex",
       debug = false,
       language = "ja",
       auto_fold = true,
@@ -62,12 +63,19 @@ return {
         desc = "CopilotChat - Toggle",
       },
       {
-        "<leader>cx",
+        "<Leader>cx",
         function()
           require("CopilotChat").reset()
           print("CopilotChat: Context reset")
         end,
         desc = "CopilotChat - Reset Chat",
+      },
+      {
+        "<Leader>cm",
+        function()
+          require("CopilotChat").select_model()
+        end,
+        desc = "CopilotChat -  Change/Confirm Model",
       },
       {
         "<Leader>cq",
@@ -80,8 +88,14 @@ return {
         mode = "v",
         desc = "CopilotChat - Quick Chat",
       },
-      { "<Leader>cr", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "CopilotChat - Review" },
-      { "<Leader>cf", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "CopilotChat - Fix" },
+      {
+        "<Leader>cp",
+        function()
+          require("CopilotChat").select_prompt({ selection = require("CopilotChat.select").visual })
+        end,
+        mode = "v",
+        desc = "CopilotChat - Open prompt selector with optional config",
+      },
     },
   },
 }
