@@ -15,7 +15,8 @@ return {
     options = {
       icons_enabled = true,
       theme = "auto",
-      globalstatus = true,
+      -- NOTE: Inactive sections are redundant with globalstatus enabled
+      globalstatus = true, -- Use a single statusline at the bottom
       disabled_filetypes = {
         statusline = { "snacks_dashboard", "snacks_picker_list" },
         winbar = { "snacks_dashboard", "snacks_picker_list" },
@@ -26,14 +27,6 @@ return {
       lualine_b = { "branch" },
       lualine_c = { "filename" },
       lualine_x = { "encoding", "fileformat", "filetype" },
-      lualine_y = {},
-      lualine_z = {},
-    },
-    inactive_sections = {
-      lualine_a = {},
-      lualine_b = {},
-      lualine_c = { "filename" },
-      lualine_x = { "location" },
       lualine_y = {},
       lualine_z = {},
     },
