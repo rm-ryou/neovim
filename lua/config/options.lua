@@ -15,7 +15,7 @@ opt.laststatus = 2 -- Always show the status line
 opt.ruler = true -- Show the cursor potition
 opt.showmatch = true -- Show matching parentheses
 opt.list = true -- Show invisible characters
-opt.listchars = { eol = "↴" }
+opt.listchars = { eol = "↴", tab = "  ", nbsp = "␣" }
 
 -----------------------------------------------------------
 -- Editing Behavior

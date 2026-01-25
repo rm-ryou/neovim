@@ -65,7 +65,7 @@ return {
       })
 
       opts.sources = cmp.config.sources({
-        { name = "copilot" },
+        -- { name = "copilot" },
         { name = "lazydev", group_index = 0 },
         { name = "nvim_lsp" },
         { name = "path" },
