@@ -17,6 +17,10 @@ opt.showmatch = true -- Show matching parentheses
 opt.list = true -- Show invisible characters
 opt.listchars = { eol = "↴", tab = "  ", nbsp = "␣" }
 
+-- Scrolling
+opt.scrolloff = 7 -- Keep at least 7 lines above/below the cursor
+opt.sidescrolloff = 8 -- Keep at least 8 columns to the left/right of the cursor
+
 -----------------------------------------------------------
 -- Editing Behavior
 -----------------------------------------------------------
