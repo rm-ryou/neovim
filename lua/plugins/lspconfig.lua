@@ -90,19 +90,11 @@ return {
     snacks.keymap.set("n", "gy", vim.lsp.buf.type_definition, { desc = "Goto T[y]pe Definition" })
     snacks.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Goto Declaration" })
     -- stylua: ignore
-    snacks.keymap.set("n", "K", function() return vim.lsp.buf.hover() end, {desc = "Hover" })
+    snacks.keymap.set("n", "K", function() return vim.lsp.buf.hover() end, { desc = "Hover" })
     -- stylua: ignore
-    snacks.keymap.set("n", "gK", function() return vim.lsp.buf.signature_help() end, {desc = "Signature Help"})
+    snacks.keymap.set("n", "gK", function() return vim.lsp.buf.signature_help() end, { desc = "Signature Help" })
     -- stylua: ignore
-    snacks.keymap.set("i", "<c-k>", function() return vim.lsp.buf.signature_help() end, {desc = "Signature Help"})
-    snacks.keymap.set({ "n", "x" }, "<Leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
-    snacks.keymap.set({ "n", "x" }, "<Leader>cc", vim.lsp.codelens.run, { desc = "Run Codelens" })
-    snacks.keymap.set("n", "<Leader>cC", vim.lsp.codelens.refresh, { desc = "Refresh & Display Codelens" })
-    -- stylua: ignore
-    snacks.keymap.set("n", "<Leader>cR", function() snacks.rename.rename_file() end, {desc = "Rename File"})
-    snacks.keymap.set("n", "<Leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
-    -- stylua: ignore
-    snacks.keymap.set("n", "<Leader>cR", function() snacks.rename.rename_file() end, { desc = "Rename File" })
+    snacks.keymap.set("i", "<c-k>", function() return vim.lsp.buf.signature_help() end, { desc = "Signature Help" })
     -- stylua: ignore
     snacks.keymap.set("n", "<Leader>sj", function() snacks.picker.jumps() end, { desc = "Jump List" })
 
